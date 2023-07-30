@@ -5,7 +5,7 @@ import veda from "../assets/Back to Vedas 🕉️.png";
 import Group from "../assets/Group.svg";
 import tower from "../assets/tower.svg";
 import wifi from "../assets/wifi.svg";
-
+import { Link } from "react-router-dom";
 //import "./Splash.css";
 
 const Splash = () => {
@@ -26,13 +26,13 @@ const Splash = () => {
           <img className=" md:w-60 object-fill" src={logo} />
         </div>
 
-        <a href="/chat-app/Onboarding">
+        <Link to ="/chat-app/Onboarding">
         <button className=" top-132  md:w-60 justify-center  items-center hover:bg-gray-200 p-4 rounded-full">
          
             <img className=" md:w-60 object-fill " src={veda} />
          
         </button>
-        </a>
+        </Link>
 
       </div>
     </div>
