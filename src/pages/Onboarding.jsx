@@ -6,7 +6,7 @@ import girl from "../assets/cartoon-image-of-indian-girl-doing-namaste 1.png";
 import facebook from "../assets/Facebook-f_Logo-Blue-Logo.wine.png";
 import apple from "../assets/Apple_Inc.-Logo.wine (1).png";
 import google from "../assets/Google_Pay-Logo.wine (1).png";
-
+import { Link } from "react-router-dom";
 //import {auth} from '../firebase'
 //import { GoogleAuthProvider,signInWithRedirect } from "firebase/auth";
 
@@ -76,15 +76,15 @@ const Onboarding = () => {
             <hr className="flex-grow h-px my-8 bg-black border-0" />
           </div>
           <div className="flex items-center justify-center">
-          <a href="/chat-app/SignUp">
+          <Link to ="/chat-app/SignUp">
           <button className="bg-[#FFC746] text-[#69235B] px-14 py-5 text-3xl rounded-xl m-3 hover:bg-yellow-200">Sign up with mail</button>
-          </a>
+          </Link>
           </div>
           <div className="flex items-center justify-center m-6">
             <p className="text-2xl text-[#FFFFFF]">Existing account? 
-            <a href="/chat-app/SignIn">
+            <Link to ="/chat-app/SignIn">
             <span className="text-[#FBBC04] hover:text-yellow-200">Log in</span>
-            </a>
+            </Link>
             </p>
           </div>
         
